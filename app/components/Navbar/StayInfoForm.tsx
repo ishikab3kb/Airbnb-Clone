@@ -11,7 +11,7 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
-import SearchFilter from "./SearchFilter";
+
 import { Button } from "@/components/ui/button";
 import { Calendar } from "@/components/ui/calendar";
 import {
@@ -23,6 +23,7 @@ import { format } from "date-fns";
 import { CalendarIcon, Search } from "lucide-react";
 
 import { formSchema, FormValues } from "@/lib/types";
+import SearchFilter from "./SearchFilter";
 
 const StayInfoForm = () => {
   // Initialize the form with react-hook-form

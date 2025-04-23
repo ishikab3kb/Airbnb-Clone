@@ -1,11 +1,13 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import SearchFilter from "./SearchFilter";
 import StayInfoForm from "./StayInfoForm";
 
 export function SeacrhTab() {
   return (
-    <Tabs defaultValue="account" className="w-full">
-      <TabsList className="grid w-full grid-cols-2 bg-transparent">
+    <Tabs
+      defaultValue="account"
+      className="w-full flex flex-col justify-center items-center"
+    >
+      <TabsList className="grid grid-cols-2 bg-transparent">
         <TabsTrigger value="home" className="hover:bg-zinc-100">
           Home
         </TabsTrigger>
@@ -13,7 +15,7 @@ export function SeacrhTab() {
           Experiences
         </TabsTrigger>
       </TabsList>
-      <TabsContent value="home">
+      <TabsContent value="home" className="items-center">
         <StayInfoForm />
       </TabsContent>
       <TabsContent value="experiences"></TabsContent>
